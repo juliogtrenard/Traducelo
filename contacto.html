@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tradúcelo | Pide tu presupuesto</title>
+	<link href="css/estilos.css" rel="stylesheet" />
+	<script src="https://kit.fontawesome.com/5b18777add.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+</head>
+
+<body>
+	<header class="barra-navegacion">
+		<h1 class="empresa-nombre"><a href="index.html">Tradúcelo</a></h1>
+		<nav class="barra-navegacion--menu">
+			<ul>
+				<li class="barra-navegacion--enlaces"><a href="index.html">Inicio</a></li>
+				<li class="barra-navegacion--enlaces"><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+				<li class="barra-navegacion--enlaces desplegable">
+					<a href="traducciones-web.html">Traducciones &darr;</a>
+					<div class="div-desplegable">
+						<a href="traducciones-web.html">Web</a>
+						<a href="traducciones-audiovisual.html">Audiovisual</a>
+						<a href="traducciones-juridica.html">Jurídica</a>
+					</div>
+				</li>
+				<li class="barra-navegacion--enlaces active"><a href="#">Contacto</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div class="contenedor_contacto">
+		<div class="zona-izq">
+			<i class="fas fa-envelope"></i>
+			<i class="fas fa-at"></i>
+			<i class="fas fa-mail-bulk"></i>
+		</div>
+		<form class="formulario" action="#">
+			<h1>Tradúcelo | Pide tu presupuesto</h1>
+			<h2>Adjunta el documento que necesites traducir e indíca el idioma y tus datos de contacto.</h2>
+			<div class="info">
+				<input class="fnombre" type="text" name="nombre" placeholder="Nombre completo" required>
+				<input type="email" name="email" placeholder="Email" required>
+				<input type="text" name="telefono" placeholder="Teléfono">
+				<input type="text" name="idioma" placeholder="Idioma a traducir" required>
+				<input type="file" name="archivo" required>
+			</div>
+			<p>Observaciones</p>
+			<div>
+				<textarea rows="4"></textarea>
+			</div>
+			<div class="politicas-privacidad">
+				<input type="checkbox" name="politicas" required>
+				<p>He leído y acepto la Política de privacidad.</p>
+			</div>
+			<button id="enviar_contacto" type="submit" href="#">Enviar</button>
+		</form>
+	</div>
+	<footer>
+		<div class="copyright">
+			<p>Tradúcelo © 2024</p>
+		</div>
+		<div class="redes-sociales">
+			<i class="fa-brands fa-facebook-f"></i>
+			<i class="fa-brands fa-twitter"></i>
+			<i class="fa-brands fa-youtube"></i>
+		</div>
+	</footer>
+</body>
+
+</html>

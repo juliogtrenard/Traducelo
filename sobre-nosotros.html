@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/estilos.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5b18777add.js" crossorigin="anonymous"></script>
+    <title>Tradúcelo | Sobre nosotros</title>
+</head>
+<body>
+    <header class="barra-navegacion">
+        <h1 class="empresa-nombre"><a href="index.html">Tradúcelo</a></h1>
+        <nav class="barra-navegacion--menu">
+            <ul>
+                <li class="barra-navegacion--enlaces"><a href="index.html">Inicio</a></li>
+                <li class="barra-navegacion--enlaces active"><a href="#">Sobre Nosotros</a></li>
+                <li class="barra-navegacion--enlaces desplegable">
+                    <a href="traducciones-web.html">Traducciones &darr;</a>
+                    <div class="div-desplegable">
+                        <a href="traducciones-web.html">Web</a>
+                        <a href="traducciones-audiovisual.html">Audiovisual</a>
+                        <a href="traducciones-juridica.html">Jurídica</a>
+                    </div>
+                </li>
+                <li class="barra-navegacion--enlaces"><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="encabezado--sobre-nosotros">
+        <h1>Somos <span>Tradúcelo</span></h1>
+    </div>
+    <div id="contenedor--sobre-nosotros">
+        <section id="seccion-equipo">
+            <div id="equipo"><img id="cambio-imagen" src="imagenes/equipo-1.png" width="600" height="400"/></div>
+        </section>
+        <section id="informacion--sobre-nosotros">
+            <article>
+                <h2>Nuestro equipo</h2>
+                <div class="info">
+                    <div class="texto">
+                        <p id="texto-1">Nuestra empresa de traducción Tradúcelo ofrece un servicio 100% personalizado.
+                            Tan solo tendrás que contarnos el proyecto y nosotros nos encargamos de ajustar al máximo el presupuesto.
+                            Disponemos de traductores especializados en los sectores de traducción en los que trabajamos,
+                            precios accesibles, sistemas de revisión y un gran servicio al cliente.</p>
+                    </div>
+                    <div class="foto">
+                        <img id="imagen-1" src="imagenes/equipo.png"/>
+                    </div>
+                </div>
+            </article>
+            <article>
+                <h2>Cómo trabajamos</h2>
+                <div class="info">
+                    <div class="foto">
+                        <img id="imagen-2" src="imagenes/metodologia.png"/>
+                    </div>
+                    <div class="texto">
+                        <p id="texto-2">Todos y cada uno de los proyectos de traducción que realizamos pasan por
+                            distintas fases que nos permite realizar el trabajo de una manera más metódica.
+                            Hay que tener en cuenta que la particularidad de cada uno de ellos provoca que el trabajo se
+                            intensifique más en una u otra fase del proceso. Desde el análisis del material al recibir
+                            el documento por parte del cliente y la elaboración del presupuesto, elegimos a nuestro grupo
+                            de traductores más adecuados para el trabajo.</p>
+                    </div>
+                </div>
+            </article>
+            <article>
+                <h2>Atención al cliente</h2>
+                <div class="info">
+                    <div class="texto">
+                        <p id="texto-3">Una vez el texto ha sido traducido y ha pasado con éxito las diversas fases de control,
+                            se envía el resultado final al cliente en el formato requerido. Este punto es muy
+                            importante para nosotros, ya que nos sirve para evaluar nuestro servicio y mejorar en algunos aspectos.
+                            Cuando el cliente recibe su traducción, agradecemos enormemente que comente qué le ha parecido el
+                            resultado del trabajo y también el servicio global ofrecido por nuestra empresa.</p>
+                    </div>
+                    <div class="foto">
+                        <img id="imagen-3" src="imagenes/cliente.png"/>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </div>
+    <footer>
+        <div class="copyright">
+            <p>Tradúcelo © 2024</p>
+        </div>
+        <div class="redes-sociales">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-youtube"></i>
+        </div>
+    </footer>
+
+    <script>
+        var texto1 = document.getElementById("texto-1");
+        var texto2 = document.getElementById("texto-2");
+        var texto3 = document.getElementById("texto-3");
+        var imagen1 = document.getElementById("imagen-1");
+        var imagen2 = document.getElementById("imagen-2");
+        var imagen3 = document.getElementById("imagen-3");
+
+        window.onscroll = function() {funcionScroll()};
+
+        function funcionScroll() {
+            if (document.body.scrollTop > 250 || document.documentElement.scrollTop > 250) {
+                texto1.style.left = "0";
+            }
+            if (document.body.scrollTop > 250 || document.documentElement.scrollTop > 250) {
+                imagen1.style.right = "0";
+            }
+            if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
+                texto2.style.right = "0";
+            }
+            if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
+                imagen2.style.left = "0";
+            }
+            if (document.body.scrollTop > 1100 || document.documentElement.scrollTop > 1100) {
+                texto3.style.left = "0";
+            }
+            if (document.body.scrollTop > 1100 || document.documentElement.scrollTop > 1100) {
+                imagen3.style.right = "0";
+            }
+        }
+
+        var id_setinterval;
+        var contador = 0;
+
+        function cambiar() {
+        contador++;
+        switch (contador % 4+1) {
+            case 1:
+                document.getElementById("cambio-imagen").src="imagenes/equipo-1.png";
+                break;
+            case 2:
+                document.getElementById("cambio-imagen").src="imagenes/equipo-2.png";
+                break;
+            case 3:
+                document.getElementById("cambio-imagen").src="imagenes/equipo-3.png";
+                break;
+            case 4:
+                document.getElementById("cambio-imagen").src="imagenes/equipo-4.png";
+                break;
+        }
+    }
+
+    function iniciar() {
+        id_setinterval = setInterval(cambiar,5000);
+    }
+
+    window.onload = iniciar;
+    </script>
+</body>
+</html>
