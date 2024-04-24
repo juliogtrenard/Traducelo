@@ -220,6 +220,11 @@
     padding-top: 5px;
 }
 
+.cuadrado {
+        opacity: 0;
+        transition: 2s;
+    }
+
 /* ///////////////////////////////////EMPRESA VALORES - INICIO/////////////////////////////////// */
 #informacion-empresa-valores {
     display: flex;
@@ -306,9 +311,12 @@ footer div {
 #equipo {
     max-width: 600px;
     height: 400px;
-    margin: auto;
-    border-top: solid 3px var(--colorSecundario);
     transform: 5s;
+}
+
+#equipo img {
+    width: 470px;
+    height: 300px;
 }
 
 /* ////////////////////////////////////////SECCION INFORMACION//////////////////////////////// */
@@ -464,14 +472,34 @@ article:nth-child(even) img {
     #informacion-empresa-valores--texto p {
         font-size: 20px;
     }
+    #texto-movimiento {
+        position: relative;
+        right: -1000px;
+        transition: 1s ease-out;
+    }
     #informacion-empresa-valores--texto ul li {
         font-size: 19PX;
     }
-    /* ////////////////////////////////////////SOBRE NOSOTROS//////////////////////////////// */
-    #video {
-        display: flex;
-        flex: 1 1 100%;
+    #informacion-empresa-valores--texto ul {
+        position: relative;
+        right: -1000px;
+        transition: 3.5s;
     }
+
+    /* ////////////////////////////////////////SOBRE NOSOTROS//////////////////////////////// */
+    #equipo {
+        max-width: 600px;
+        height: 400px;
+        margin: auto;
+        border-top: solid 3px var(--colorSecundario);
+        transform: 5s;
+    }
+
+    #equipo img {
+        width: 600px;
+        height: 400px;
+    }
+
     /* ////////////////////////////////////////SECCION INFORMACION//////////////////////////////// */
     #informacion--sobre-nosotros article {
         overflow: hidden;

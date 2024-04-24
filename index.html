@@ -117,7 +117,6 @@
     </footer>
 
     <script>
-        var navegacion = document.getElementById("barra-navegacion");
         var listaPadre = document.getElementsByTagName("ul")[1];
         var texto = document.getElementById("texto-movimiento");
         var cuadrados = document.getElementsByClassName("cuadrado");
@@ -125,10 +124,6 @@
         window.onscroll = function() {funcionScroll()};
 
         function funcionScroll() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                navegacion.style.top = "0";
-            }
-
             if (document.body.scrollTop > 1450 || document.documentElement.scrollTop > 1450) {
                 texto.style.right = "0";
             }
