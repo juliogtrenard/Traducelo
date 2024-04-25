@@ -315,8 +315,9 @@ footer div {
 }
 
 #equipo img {
-    width: 470px;
-    height: 300px;
+    margin-left: 40px;
+    width: 380px;
+    height: 280px;
 }
 
 /* ////////////////////////////////////////SECCION INFORMACION//////////////////////////////// */
@@ -491,7 +492,6 @@ article:nth-child(even) img {
         max-width: 600px;
         height: 400px;
         margin: auto;
-        border-top: solid 3px var(--colorSecundario);
         transform: 5s;
     }
 
@@ -573,26 +573,24 @@ article:nth-child(even) img {
     position: absolute;
     text-align: center;
     font-weight: bold;
-    padding: 0 30px;
-    top: 45%;
+    top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    font-size: 40px;
+    font-size: 30px;
 }
 .div--portada-informacion p {
     position: absolute;
     text-align: center;
-    padding: 0 10px;
     top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    font-size: 20px;
+    font-size: 18px;
 }
 .div--portada-informacion button {
     position: absolute;
-    bottom: 20%;
+    bottom: 10%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 17px;
@@ -721,7 +719,7 @@ form h1 {
 }
 
 form h2 {
-    font-size: 16px;
+    font-size: 15px;
     margin: 0 0 20px;
     font-weight: 400;
     color: #666;
@@ -743,7 +741,7 @@ form p {
 
 .fas {
     margin: 25px 10px 0;
-    font-size: 72px;
+    font-size: 70px;
     color: #fff;
 }
 .fa-envelope {
@@ -767,6 +765,7 @@ input::placeholder {
 
 [type="file"] {
     border: none;
+    overflow: hidden;
 }
 
 .politicas-privacidad {
@@ -783,7 +782,7 @@ input::placeholder {
     padding: 10px;
     border: none;
     background: #1c87c9; 
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
     color: #fff;
 }
